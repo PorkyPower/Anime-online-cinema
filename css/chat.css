@@ -1,0 +1,210 @@
+#chat-window{
+    height: 500px;
+    background: #201F28;
+    overflow:hidden;
+    overflow-y:scroll;
+    scrollbar-color: black red;
+    border: 1px solid black;
+    color: black;
+    font-size: 10pt;
+}
+.scrollstyle::-webkit-scrollbar{
+    width: 3px;
+}
+.scrollstyle::-webkit-scrollbar-thumb{
+    background: red;
+}
+.scrollstyle::-webkit-scrollbar-track{
+    background: black;
+}
+#chat-btns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid black;
+    align-items: center;
+}
+#msg-from-me{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1%;
+}
+#msg-from-me-con{
+    background: #FBFFEF;
+    border-radius: 15px;
+    padding: 2% 5%;
+    max-width: 250px;
+    display: flex;
+    align-items: flex-end;
+}
+#msg-from-users{
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+}
+#msg-from-users-con{
+    background: #FFE0DD;
+    border-radius: 15px;
+    padding: 2% 5%;
+    max-width: 250px;
+    display: flex;
+    align-items: flex-end;
+}
+#date-msg{
+    font-size: 7pt;
+}
+#txt-msg{
+    margin: 5px;
+}
+#txt-msg > a{
+    text-decoration: none;
+    color:darkcyan;
+    font-weight: bold;
+}
+#txt-msg > a > svg{
+    position: inherit;
+    margin-left: 0;
+    width: auto;
+}
+#img-sticker{
+    width: 90px;
+    pointer-events: none;
+}
+#close-chat{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    background: #201F28;
+    border-bottom: 1px solid white;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid black;
+}
+#close-chat > div:first-child{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 5%;
+    font-size: 14pt;
+}
+#close-chat > div:last-child{
+    color: white;
+    padding: 3%;
+    cursor: pointer;
+}
+#chat-block{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    z-index: 99;
+    font-size: 12pt;
+}
+#chat-block-con{
+    margin-right: 20px;
+    width: 380px;
+    display: none;
+}
+#openchat {
+    display: flex;
+    justify-content: flex-end;
+}
+#openchat svg{
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 12px;
+    cursor: pointer;        
+    background: #201F28;
+}
+#openchat svg:hover{ 
+    background: #48465B;
+}
+#msgtext{
+    padding: 4%;
+    width: 100%;
+    background: #201F28;
+    border: none;
+    border-right: 1px solid black;
+    outline: none;
+    color: white;
+}
+#btn-msg{ 
+    background: #201F28;
+    border: none;
+    color: red;
+    cursor: pointer;
+    padding: 4%;
+}
+#stickerbtn{
+    padding: 2%;
+    cursor: pointer;
+    background: #201F28;
+}
+#stickerblock{
+    display: none;
+    width: 0;
+    height: 0;
+}
+#stickers-cons{
+    position: absolute;
+    width: 292px;
+    height: 300px;
+    bottom: 78px;
+    background: #201F28;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    align-content: flex-start;  
+    overflow:hidden;
+    overflow-y:scroll;
+    scrollbar-color: black red;
+}
+#stickerblock > div > div{
+    padding: 4px;
+    cursor: pointer;
+}
+#stickerblock > div > div:hover{
+    background: #48465B;
+}
+#stickerblock > div > div > img{
+    width: 64;
+    height: 64;
+}
+#typestickers{
+    position: absolute;
+    width: 288px;
+    height: 40px;
+    bottom: 40px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #201F28;
+}
+#delmsgchat{    
+    display: grid;
+    align-items: center;
+}
+#delmsgchat > div{    
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+}
+
+
+@media (max-width:500px) {
+    #chat-block{
+        bottom: 0;
+        right: 0;
+    }
+    #chat-block-con{
+        width: 100%;
+    position: inherit;
+        margin: 0;
+    }
+}

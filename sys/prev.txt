@@ -1,0 +1,37 @@
+if (json.one){
+                        $("#lineprogress").css("width","100%");
+                        $('.upg').html('Обработка - Готово');
+                        console.log(json.one);
+                        console.log(json.two);
+                        console.log(json.tree);
+                        $("label[tag=1]").css({"background":"url(sys/upload/files/"+json.one+")","background-size":"cover","background-position-y":"center"});
+                        $("label[tag=2]").css({"background":"url(sys/upload/files/"+json.two+")","background-size":"cover","background-position-y":"center"});
+                        $("label[tag=3]").css({"background":"url(sys/upload/files/"+json.tree+")","background-size":"cover","background-position-y":"center"});
+                        clearInterval(IntId);
+                    } else {
+                        $('.upg').html('Обработка - '+ data+'%');
+                        $("#lineprogress").css("width",data+"%");
+                        $("input[name=link]").attr('value: '+dataget+'');
+                    }
+
+
+
+
+
+                       <div id=videupload-text>
+                           Превью видео
+                       </div>
+                       <div id=prevvideoblock>
+                            <label tag=1 id="prevvideo" class="switch ots5">
+                                <input num="%s" value="%s" id=checkswitch type="radio" name=genre field=%s>
+                                <span class="checkimage"></span>
+                            </label>
+                            <label tag=2 id="prevvideo" class="switch ots5">
+                                <input num="%s" value="%s" id=checkswitch type="radio" name=genre field=%s>
+                                <span class="checkimage"></span>
+                            </label>
+                            <label tag=3 id="prevvideo" class="switch ots5">
+                                <input num="%s" value="%s" id=checkswitch type="radio" name=genre field=%s>
+                                <span class="checkimage"></span>
+                            </label>
+                       </div>

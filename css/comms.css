@@ -1,0 +1,143 @@
+#comms-block{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+#comms-block > div{
+    margin: 1%;
+}
+#inputtext{
+    width: 300px;
+    outline: none;
+    resize: none; 
+    font-size: 12pt;
+    border: 2px solid #0000004a;
+    border-radius: 10px;
+    padding: 8px;
+}
+#cooms-count{
+    width: 96%;
+    height: 20px;
+    background: #0000004a;
+    padding: 1%;
+}
+#comms-form{
+    display: flex;
+    align-items: center;
+}
+#comms-form > div{
+    margin: 5px;
+}
+#sendcom{
+    display: flex;
+    color: white;
+    background: #F84134;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+    padding: 4px;
+}
+
+
+#comm_head{
+    display: flex;
+    align-items: center;
+}
+#comm_head > div{
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+#comm_author_avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 150px;   
+    background: url(http://SITE/imgs/users/ava/4.png);
+    background-size: cover !important;    
+    background-position: center !important;
+}
+#comm_author_avatar_outline{
+    width: 45px;
+    height: 45px;
+    padding: 1px;
+    background: white;
+    border-radius: 150px;
+    margin-right: 10px;
+}
+#comm_author_name > a{
+    text-decoration: none;
+    color: cadetblue;
+    font-size: 16pt;
+}
+#comm_date{
+    font-size: 8pt;
+    cursor: default;
+    color: lightgrey;
+}
+#comm > div{
+    margin-bottom: 10px;
+}
+#reply_comm{
+    font-size: 12pt;
+    cursor: pointer;
+    color: indianred;
+}
+#comm{
+    display: grid;
+    justify-items: start;
+}
+#reply_comment{
+    display: grid;
+    justify-items: start;
+}
+#comms-list > div{
+    margin-bottom: 2%;
+}
+#reply_comment > div{
+    margin-bottom: 2%;
+}
+#child-comments > div{
+    margin-bottom: 2%;
+    margin-left: 40px;
+}
+#child-comments{
+    border-left: 1px solid #0000004a;
+}
+[contenteditable=true]:empty:before{
+    content: attr(placeholder);
+    pointer-events: none;
+    display: block;
+    color: lightgray;
+}
+#comm_cont{
+    cursor:default;
+}
+#comm_rating > div{
+    width: 30px;
+    height: 30px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rating_up{
+    background: #0000004a;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+}
+#rating_down{
+    background: #0000004a;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+#count_rating{
+    background: #0000004a;
+    cursor: default;
+    width: auto !important;
+}
+#comm_rank{
+    font-size: 10pt;
+    cursor: default;
+    color: lightgrey;
+}

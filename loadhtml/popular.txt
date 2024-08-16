@@ -1,0 +1,42 @@
+    <div id=popularblock>
+        <div id=menupopular>
+            <nav>
+                <ul>
+                    <li><span class=menuchecked id=mainpage><a id=mainpage>Популярное</a><div id=spanchecked></div></span></li>
+                    <li><span class="menuchecked hidecheck" id=seriespage><a id=seriespage>Премьеры</a><div id=spanchecked></div></span></li>
+                    <li><span class="menuchecked hidecheck" id=fullmoviepage><a id=fullmoviepage>Новинки</a><div id=spanchecked></div></span></li>
+                </ul>
+            </nav>
+        </div>
+        <div id=polosarazdel></div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id=popular-genre>
+            {{ MAIN.GENRE }}
+        </div>
+        <div id=blockspopular>
+            <div id=blockmovie>
+                <div id=blockmovie-prev></div>
+                <div id=blockmovie-name>Мастера меча онлайн</div>
+                <div id=blockmovie-bottom><div id=blockmovie-bottom-left><div id=blockmovie-bottom-rating>7.5</div><div id=blockmovie-bottom-year>2012</div></div></div>
+            </div>
+            <div id=blockmovie>
+                <div id=blockmovie-prev></div>
+                <div id=blockmovie-name>Мастера меча онлайн</div>
+                <div id=blockmovie-bottom><div id=blockmovie-bottom-left><div id=blockmovie-bottom-rating>7.5</div><div id=blockmovie-bottom-year>2012</div></div></div>
+            </div>
+            <div id=blockmovie>
+                <div id=blockmovie-prev></div>
+                <div id=blockmovie-name>Мастера меча онлайн</div>
+                <div id=blockmovie-bottom><div id=blockmovie-bottom-left><div id=blockmovie-bottom-rating>7.5</div><div id=blockmovie-bottom-year>2012</div></div></div>
+            </div>
+        </div>

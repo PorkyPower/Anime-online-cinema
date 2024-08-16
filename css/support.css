@@ -1,0 +1,54 @@
+@font-face {
+    font-family: CaviarDreams; 
+    src: url(./CaviarDreams.ttf); 
+
+    font-family: Comfortaa; 
+    src: url(./Comfortaa-Regular.ttf); 
+
+    font-family: Inter-Regular; 
+    src: url(./Inter-Regular.ttf); 
+
+}
+#inputtext{
+    width: 300px;
+    outline: none;
+    resize: none; 
+    font-size: 12pt;
+    border: 2px solid #0000004a;
+    border-radius: 10px;
+    padding: 8px;
+}
+[contenteditable=true]:empty:before{
+    content: attr(placeholder);
+    pointer-events: none;
+    display: block;
+    color: lightgray;
+}    
+#sup_dialog{
+    margin: 3% 0;
+}
+#sup_dialog_block{
+    background: #FFE0DD; 
+    color: black;
+    border-radius: 15px;
+    padding: 1%;
+}
+#sup_name_avatar{    
+    width: 45px;
+    height: 45px;
+    border-radius: 150px;
+    background: url(http://SITE/imgs/users/ava/4.png);
+    background-size: cover !important;
+    background-position: center !important;
+}
+#sup_name_user{
+    display: flex;
+    font-size: 14pt;
+    align-items: center;
+}
+#sup_name_name{
+    margin: 0 2%;
+}
+#sup_name_date{
+    font-size: 10pt;
+}
